@@ -1,13 +1,10 @@
 DragSortListView
 ================
 
-# NOTICE: No longer maintained.
-
-I do not have much time to devote to this project so I am
-dropping support for the time being. Sorry everybody!
-
 News
 ----
+
+**Sept 8, 2013**: Fix 'aapt' problem with maven.  Fix bug where list items with linear layous won't fill the entire width.
 
 **April 2, 2013**: Hey all. If you want to send a pull request,
 please read the [Contributing](https://github.com/bauerca/drag-sort-listview#contributing) section first. Thanks!
