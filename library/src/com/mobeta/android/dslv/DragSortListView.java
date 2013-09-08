@@ -736,7 +736,10 @@ public class DragSortListView extends ListView {
                 v.setLayoutParams(new AbsListView.LayoutParams(
                         ViewGroup.LayoutParams.FILL_PARENT,
                         ViewGroup.LayoutParams.WRAP_CONTENT));
-                v.addView(child);
+                final ViewGroup.LayoutParams childParams = parent.getLayoutParams();
+                childParams.width = ViewGroup.LayoutParams.FILL_PARENT;
+                childParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+                v.addView(child, childParams);
             }
 
             // Set the correct item height given drag state; passed
